@@ -191,13 +191,13 @@ Captured screenshots of:
 ### 1. Clone Repository
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/sufe01/221980025_SafyanRamzan_Spark_Assignment3
 ```
 
 ### 2. Navigate to Project
 
 ```bash
-cd RollNo_Name
+cd 221980025_SafyanRamzan_Spark_Assignment3
 ```
 
 ### 3. Start Docker Container
