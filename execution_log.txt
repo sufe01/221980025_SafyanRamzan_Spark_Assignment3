@@ -1,0 +1,7 @@
+Entered start.sh with args: jupyter lab
+Running hooks in: /usr/local/bin/start-notebook.d as uid: 1000 gid: 100
+Done running hooks in: /usr/local/bin/start-notebook.d
+Running hooks in: /usr/local/bin/before-notebook.d as uid: 1000 gid: 100
+Sourcing shell script: /usr/local/bin/before-notebook.d/spark-config.sh
+Done running hooks in: /usr/local/bin/before-notebook.d
+Executing the command: jupyter lab
