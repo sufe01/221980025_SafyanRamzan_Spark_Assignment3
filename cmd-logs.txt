@@ -1,0 +1,646 @@
+sufe@HP-ProBook-450-G6:~$ sudo apt install curl wget unzip -y
+[sudo] password for sufe: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+curl is already the newest version (8.5.0-2ubuntu10.11).
+wget is already the newest version (1.21.4-1ubuntu4.4).
+wget set to manually installed.
+unzip is already the newest version (6.0-28ubuntu4.1).
+The following packages were automatically installed and are no longer required:
+  amd64-microcode bpfcc-tools bpftrace ieee-data intel-microcode iucode-tool
+  libbpfcc libclang-cpp18 libclang1-18 libllvm18 libllvm19 python3-bpfcc
+  python3-netaddr thermald ubuntu-kernel-accessories
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
+sufe@HP-ProBook-450-G6:~$ curl --version
+wget --version
+unzip -v
+git --version
+docker --version
+curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10
+Release-Date: 2023-12-06, security patched: 8.5.0-2ubuntu10.11
+Protocols: dict file ftp ftps gopher gophers http https imap imaps ldap ldaps mqtt pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp
+Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL threadsafe TLS-SRP UnixSockets zstd
+GNU Wget 1.21.4 built on linux-gnu.
+
+-cares +digest -gpgme +https +ipv6 +iri +large-file -metalink +nls 
++ntlm +opie +psl +ssl/openssl 
+
+Wgetrc: 
+    /etc/wgetrc (system)
+Locale: 
+    /usr/share/locale 
+Compile: 
+    gcc -DHAVE_CONFIG_H -DSYSTEM_WGETRC="/etc/wgetrc" 
+    -DLOCALEDIR="/usr/share/locale" -I. -I../../src -I../lib 
+    -I../../lib -Wdate-time -D_FORTIFY_SOURCE=3 -DHAVE_LIBSSL -DNDEBUG 
+    -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer 
+    -ffile-prefix-map=/build/wget-TrFjsj/wget-1.21.4=. -flto=auto 
+    -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection 
+    -Wformat -Werror=format-security -fcf-protection 
+    -fdebug-prefix-map=/build/wget-TrFjsj/wget-1.21.4=/usr/src/wget-1.21.4-1ubuntu4.4 
+    -DNO_SSLv2 -D_FILE_OFFSET_BITS=64 -g -Wall 
+Link: 
+    gcc -DHAVE_LIBSSL -DNDEBUG -g -O2 -fno-omit-frame-pointer 
+    -mno-omit-leaf-frame-pointer 
+    -ffile-prefix-map=/build/wget-TrFjsj/wget-1.21.4=. -flto=auto 
+    -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection 
+    -Wformat -Werror=format-security -fcf-protection 
+    -fdebug-prefix-map=/build/wget-TrFjsj/wget-1.21.4=/usr/src/wget-1.21.4-1ubuntu4.4 
+    -DNO_SSLv2 -D_FILE_OFFSET_BITS=64 -g -Wall -Wl,-Bsymbolic-functions 
+    -flto=auto -ffat-lto-objects -Wl,-z,relro -Wl,-z,now -lpcre2-8 
+    -luuid -lidn2 -lssl -lcrypto -lz -lpsl ../lib/libgnu.a 
+
+Copyright (C) 2015 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later
+<http://www.gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Originally written by Hrvoje Niksic <hniksic@xemacs.org>.
+Please send bug reports and questions to <bug-wget@gnu.org>.
+UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip/ ;
+see ftp://ftp.info-zip.org/pub/infozip/UnZip.html for other sites.
+
+Compiled with gcc 13.2.0 for Unix (Linux ELF).
+
+UnZip special compilation options:
+        ACORN_FTYPE_NFS
+        COPYRIGHT_CLEAN (PKZIP 0.9x unreducing method not supported)
+        SET_DIR_ATTRIB
+        SYMLINKS (symbolic links supported, if RTL and file system permit)
+        TIMESTAMP
+        UNIXBACKUP
+        USE_EF_UT_TIME
+        USE_UNSHRINK (PKZIP/Zip 1.x unshrinking method supported)
+        USE_DEFLATE64 (PKZIP 4.x Deflate64(tm) supported)
+        UNICODE_SUPPORT [wide-chars, char coding: UTF-8] (handle UTF-8 paths)
+        LARGE_FILE_SUPPORT (large files over 2 GiB supported)
+        ZIP64_SUPPORT (archives using Zip64 for large files supported)
+        USE_BZIP2 (PKZIP 4.6+, using bzip2 lib version 1.0.8, 13-Jul-2019)
+        VMS_TEXT_CONV
+        WILD_STOP_AT_DIR
+        [decryption, version 2.11 of 05 Jan 2007]
+
+UnZip and ZipInfo environment options:
+           UNZIP:  [none]
+        UNZIPOPT:  [none]
+         ZIPINFO:  [none]
+      ZIPINFOOPT:  [none]
+git version 2.43.0
+Docker version 29.1.3, build 29.1.3-0ubuntu3~24.04.2
+sufe@HP-ProBook-450-G6:~$ curl --version
+curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10
+Release-Date: 2023-12-06, security patched: 8.5.0-2ubuntu10.11
+Protocols: dict file ftp ftps gopher gophers http https imap imaps ldap ldaps mqtt pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp
+Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL threadsafe TLS-SRP UnixSockets zstd
+sufe@HP-ProBook-450-G6:~$ wget --version
+GNU Wget 1.21.4 built on linux-gnu.
+
+-cares +digest -gpgme +https +ipv6 +iri +large-file -metalink +nls 
++ntlm +opie +psl +ssl/openssl 
+
+Wgetrc: 
+    /etc/wgetrc (system)
+Locale: 
+    /usr/share/locale 
+Compile: 
+    gcc -DHAVE_CONFIG_H -DSYSTEM_WGETRC="/etc/wgetrc" 
+    -DLOCALEDIR="/usr/share/locale" -I. -I../../src -I../lib 
+    -I../../lib -Wdate-time -D_FORTIFY_SOURCE=3 -DHAVE_LIBSSL -DNDEBUG 
+    -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer 
+    -ffile-prefix-map=/build/wget-TrFjsj/wget-1.21.4=. -flto=auto 
+    -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection 
+    -Wformat -Werror=format-security -fcf-protection 
+    -fdebug-prefix-map=/build/wget-TrFjsj/wget-1.21.4=/usr/src/wget-1.21.4-1ubuntu4.4 
+    -DNO_SSLv2 -D_FILE_OFFSET_BITS=64 -g -Wall 
+Link: 
+    gcc -DHAVE_LIBSSL -DNDEBUG -g -O2 -fno-omit-frame-pointer 
+    -mno-omit-leaf-frame-pointer 
+    -ffile-prefix-map=/build/wget-TrFjsj/wget-1.21.4=. -flto=auto 
+    -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection 
+    -Wformat -Werror=format-security -fcf-protection 
+    -fdebug-prefix-map=/build/wget-TrFjsj/wget-1.21.4=/usr/src/wget-1.21.4-1ubuntu4.4 
+    -DNO_SSLv2 -D_FILE_OFFSET_BITS=64 -g -Wall -Wl,-Bsymbolic-functions 
+    -flto=auto -ffat-lto-objects -Wl,-z,relro -Wl,-z,now -lpcre2-8 
+    -luuid -lidn2 -lssl -lcrypto -lz -lpsl ../lib/libgnu.a 
+
+Copyright (C) 2015 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later
+<http://www.gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Originally written by Hrvoje Niksic <hniksic@xemacs.org>.
+Please send bug reports and questions to <bug-wget@gnu.org>.
+sufe@HP-ProBook-450-G6:~$ unzip -v
+UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip/ ;
+see ftp://ftp.info-zip.org/pub/infozip/UnZip.html for other sites.
+
+Compiled with gcc 13.2.0 for Unix (Linux ELF).
+
+UnZip special compilation options:
+        ACORN_FTYPE_NFS
+        COPYRIGHT_CLEAN (PKZIP 0.9x unreducing method not supported)
+        SET_DIR_ATTRIB
+        SYMLINKS (symbolic links supported, if RTL and file system permit)
+        TIMESTAMP
+        UNIXBACKUP
+        USE_EF_UT_TIME
+        USE_UNSHRINK (PKZIP/Zip 1.x unshrinking method supported)
+        USE_DEFLATE64 (PKZIP 4.x Deflate64(tm) supported)
+        UNICODE_SUPPORT [wide-chars, char coding: UTF-8] (handle UTF-8 paths)
+        LARGE_FILE_SUPPORT (large files over 2 GiB supported)
+        ZIP64_SUPPORT (archives using Zip64 for large files supported)
+        USE_BZIP2 (PKZIP 4.6+, using bzip2 lib version 1.0.8, 13-Jul-2019)
+        VMS_TEXT_CONV
+        WILD_STOP_AT_DIR
+        [decryption, version 2.11 of 05 Jan 2007]
+
+UnZip and ZipInfo environment options:
+           UNZIP:  [none]
+        UNZIPOPT:  [none]
+         ZIPINFO:  [none]
+      ZIPINFOOPT:  [none]
+sufe@HP-ProBook-450-G6:~$ git --version
+git version 2.43.0
+sufe@HP-ProBook-450-G6:~$ docker --version
+Docker version 29.1.3, build 29.1.3-0ubuntu3~24.04.2
+sufe@HP-ProBook-450-G6:~$ wget --version
+GNU Wget 1.21.4 built on linux-gnu.
+
+-cares +digest -gpgme +https +ipv6 +iri +large-file -metalink +nls 
++ntlm +opie +psl +ssl/openssl 
+
+Wgetrc: 
+    /etc/wgetrc (system)
+Locale: 
+    /usr/share/locale 
+Compile: 
+    gcc -DHAVE_CONFIG_H -DSYSTEM_WGETRC="/etc/wgetrc" 
+    -DLOCALEDIR="/usr/share/locale" -I. -I../../src -I../lib 
+    -I../../lib -Wdate-time -D_FORTIFY_SOURCE=3 -DHAVE_LIBSSL -DNDEBUG 
+    -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer 
+    -ffile-prefix-map=/build/wget-TrFjsj/wget-1.21.4=. -flto=auto 
+    -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection 
+    -Wformat -Werror=format-security -fcf-protection 
+    -fdebug-prefix-map=/build/wget-TrFjsj/wget-1.21.4=/usr/src/wget-1.21.4-1ubuntu4.4 
+    -DNO_SSLv2 -D_FILE_OFFSET_BITS=64 -g -Wall 
+Link: 
+    gcc -DHAVE_LIBSSL -DNDEBUG -g -O2 -fno-omit-frame-pointer 
+    -mno-omit-leaf-frame-pointer 
+    -ffile-prefix-map=/build/wget-TrFjsj/wget-1.21.4=. -flto=auto 
+    -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection 
+    -Wformat -Werror=format-security -fcf-protection 
+    -fdebug-prefix-map=/build/wget-TrFjsj/wget-1.21.4=/usr/src/wget-1.21.4-1ubuntu4.4 
+    -DNO_SSLv2 -D_FILE_OFFSET_BITS=64 -g -Wall -Wl,-Bsymbolic-functions 
+    -flto=auto -ffat-lto-objects -Wl,-z,relro -Wl,-z,now -lpcre2-8 
+    -luuid -lidn2 -lssl -lcrypto -lz -lpsl ../lib/libgnu.a 
+
+Copyright (C) 2015 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later
+<http://www.gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Originally written by Hrvoje Niksic <hniksic@xemacs.org>.
+Please send bug reports and questions to <bug-wget@gnu.org>.
+sufe@HP-ProBook-450-G6:~$ sudo systemctl enable docker
+sudo systemctl start docker
+sufe@HP-ProBook-450-G6:~$ sudo systemctl enable docker
+sudo systemctl start docker
+sufe@HP-ProBook-450-G6:~$ sudo systemctl status docker
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; preset: e>
+     Active: active (running) since Mon 2026-08-03 13:26:08 PKT; 22min ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 2397 (dockerd)
+      Tasks: 18
+     Memory: 95.2M (peak: 97.0M)
+        CPU: 1.719s
+     CGroup: /system.slice/docker.service
+             └─2397 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/cont>
+
+Aug 03 13:26:06 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:06.6534>
+Aug 03 13:26:06 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:06.7462>
+Aug 03 13:26:06 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:06.7598>
+Aug 03 13:26:07 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:07.9979>
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.0231>
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.0239>
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.0595>
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.0746>
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.0748>
+Aug 03 13:26:08 HP-ProBook-450-G6 systemd[1]: Started docker.service - Docker A>
+lines 1-22/22 (END)...skipping...
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; preset: enabled)
+     Active: active (running) since Mon 2026-08-03 13:26:08 PKT; 22min ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 2397 (dockerd)
+      Tasks: 18
+     Memory: 95.2M (peak: 97.0M)
+        CPU: 1.719s
+     CGroup: /system.slice/docker.service
+             └─2397 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Aug 03 13:26:06 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:06.653400524+05:00" level=warning msg="failed to determine if container is already mounted>
+Aug 03 13:26:06 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:06.746295527+05:00" level=info msg="Deleting nftables IPv4 rules" error="exit status 1"
+Aug 03 13:26:06 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:06.759838078+05:00" level=info msg="Deleting nftables IPv6 rules" error="exit status 1"
+Aug 03 13:26:07 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:07.997958819+05:00" level=info msg="Loading containers: done."
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.023126072+05:00" level=info msg="Docker daemon" commit="29.1.3-0ubuntu3~24.04.2" contai>
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.023965762+05:00" level=info msg="Initializing buildkit"
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.059570712+05:00" level=info msg="Completed buildkit initialization"
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.074601023+05:00" level=info msg="Daemon has completed initialization"
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.074820116+05:00" level=info msg="API listen on /run/docker.sock"
+Aug 03 13:26:08 HP-ProBook-450-G6 systemd[1]: Started docker.service - Docker Application Container Engine.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-22/22 (END)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; preset: enabled)
+     Active: active (running) since Mon 2026-08-03 13:26:08 PKT; 22min ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 2397 (dockerd)
+      Tasks: 18
+     Memory: 95.2M (peak: 97.0M)
+        CPU: 1.719s
+     CGroup: /system.slice/docker.service
+             └─2397 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Aug 03 13:26:06 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:06.653400524+05:00" level=warning msg="failed to determine if container is already mo>
+Aug 03 13:26:06 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:06.746295527+05:00" level=info msg="Deleting nftables IPv4 rules" error="exit status >
+Aug 03 13:26:06 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:06.759838078+05:00" level=info msg="Deleting nftables IPv6 rules" error="exit status >
+Aug 03 13:26:07 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:07.997958819+05:00" level=info msg="Loading containers: done."
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.023126072+05:00" level=info msg="Docker daemon" commit="29.1.3-0ubuntu3~24.04.2" c>
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.023965762+05:00" level=info msg="Initializing buildkit"
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.059570712+05:00" level=info msg="Completed buildkit initialization"
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.074601023+05:00" level=info msg="Daemon has completed initialization"
+Aug 03 13:26:08 HP-ProBook-450-G6 dockerd[2397]: time="2026-08-03T13:26:08.074820116+05:00" level=info msg="API listen on /run/docker.sock"
+Aug 03 13:26:08 HP-ProBook-450-G6 systemd[1]: Started docker.service - Docker Application Container Engine.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+sufe@HP-ProBook-450-G6:~$ docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+sufe@HP-ProBook-450-G6:~$ mkdir ~/Spark_Assignment
+cd ~/Spark_Assignment
+sufe@HP-ProBook-450-G6:~/Spark_Assignment$ mkdir data notebooks screenshots output report
+sufe@HP-ProBook-450-G6:~/Spark_Assignment$ tree
+.
+├── data
+├── notebooks
+├── output
+├── report
+└── screenshots
+
+6 directories, 0 files
+sufe@HP-ProBook-450-G6:~/Spark_Assignment$ nano docker-compose.yml
+sufe@HP-ProBook-450-G6:~/Spark_Assignment$ docker compose pull
+docker: unknown command: docker compose
+
+Run 'docker --help' for more information
+sufe@HP-ProBook-450-G6:~/Spark_Assignment$ docker-compose --version
+docker-compose version 1.29.2, build unknown
+sufe@HP-ProBook-450-G6:~/Spark_Assignment$ docker compose pull
+docker: unknown command: docker compose
+
+Run 'docker --help' for more information
+sufe@HP-ProBook-450-G6:~/Spark_Assignment$ docker-compose pull
+Pulling pyspark ... done
+sufe@HP-ProBook-450-G6:~/Spark_Assignment$ docker-compose up
+Creating network "spark_assignment_default" with the default driver
+Creating spark_assignment ... done
+Attaching to spark_assignment
+spark_assignment | Entered start.sh with args: jupyter lab
+spark_assignment | Running hooks in: /usr/local/bin/start-notebook.d as uid: 1000 gid: 100
+spark_assignment | Done running hooks in: /usr/local/bin/start-notebook.d
+spark_assignment | Running hooks in: /usr/local/bin/before-notebook.d as uid: 1000 gid: 100
+spark_assignment | Sourcing shell script: /usr/local/bin/before-notebook.d/spark-config.sh
+spark_assignment | Done running hooks in: /usr/local/bin/before-notebook.d
+spark_assignment | Executing the command: jupyter lab
+spark_assignment | [I 2026-08-03 09:58:15.285 ServerApp] Package jupyterlab took 0.0000s to import
+spark_assignment | [I 2026-08-03 09:58:15.329 ServerApp] Package jupyter_lsp took 0.0419s to import
+spark_assignment | [W 2026-08-03 09:58:15.329 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+spark_assignment | [I 2026-08-03 09:58:15.333 ServerApp] Package jupyter_server_mathjax took 0.0033s to import
+spark_assignment | [I 2026-08-03 09:58:15.350 ServerApp] Package jupyter_server_terminals took 0.0156s to import
+spark_assignment | [I 2026-08-03 09:58:15.434 ServerApp] Package jupyterlab_git took 0.0826s to import
+spark_assignment | [I 2026-08-03 09:58:15.441 ServerApp] Package nbclassic took 0.0060s to import
+spark_assignment | [W 2026-08-03 09:58:15.445 ServerApp] A `_jupyter_server_extension_points` function was not found in nbclassic. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+spark_assignment | [I 2026-08-03 09:58:15.447 ServerApp] Package nbdime took 0.0000s to import
+spark_assignment | [I 2026-08-03 09:58:15.448 ServerApp] Package notebook took 0.0000s to import
+spark_assignment | [I 2026-08-03 09:58:15.454 ServerApp] Package notebook_shim took 0.0000s to import
+spark_assignment | [W 2026-08-03 09:58:15.454 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+spark_assignment | [I 2026-08-03 09:58:15.456 ServerApp] jupyter_lsp | extension was successfully linked.
+spark_assignment | [I 2026-08-03 09:58:15.468 ServerApp] jupyter_server_mathjax | extension was successfully linked.
+spark_assignment | [I 2026-08-03 09:58:15.479 ServerApp] jupyter_server_terminals | extension was successfully linked.
+spark_assignment | [I 2026-08-03 09:58:15.492 ServerApp] jupyterlab | extension was successfully linked.
+spark_assignment | [I 2026-08-03 09:58:15.493 ServerApp] jupyterlab_git | extension was successfully linked.
+spark_assignment | [I 2026-08-03 09:58:15.505 ServerApp] nbclassic | extension was successfully linked.
+spark_assignment | [I 2026-08-03 09:58:15.505 ServerApp] nbdime | extension was successfully linked.
+spark_assignment | [I 2026-08-03 09:58:15.520 ServerApp] notebook | extension was successfully linked.
+spark_assignment | [I 2026-08-03 09:58:15.523 ServerApp] Writing Jupyter server cookie secret to /home/jovyan/.local/share/jupyter/runtime/jupyter_cookie_secret
+spark_assignment | [I 2026-08-03 09:58:16.143 ServerApp] notebook_shim | extension was successfully linked.
+spark_assignment | [I 2026-08-03 09:58:16.277 ServerApp] notebook_shim | extension was successfully loaded.
+spark_assignment | [I 2026-08-03 09:58:16.289 ServerApp] jupyter_lsp | extension was successfully loaded.
+spark_assignment | [I 2026-08-03 09:58:16.291 ServerApp] jupyter_server_mathjax | extension was successfully loaded.
+spark_assignment | [I 2026-08-03 09:58:16.296 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+spark_assignment | [I 2026-08-03 09:58:16.309 LabApp] JupyterLab extension loaded from /opt/conda/lib/python3.11/site-packages/jupyterlab
+spark_assignment | [I 2026-08-03 09:58:16.309 LabApp] JupyterLab application directory is /opt/conda/share/jupyter/lab
+spark_assignment | [I 2026-08-03 09:58:16.312 LabApp] Extension Manager is 'pypi'.
+spark_assignment | [I 2026-08-03 09:58:16.326 ServerApp] jupyterlab | extension was successfully loaded.
+spark_assignment | [I 2026-08-03 09:58:16.341 ServerApp] jupyterlab_git | extension was successfully loaded.
+spark_assignment | [I 2026-08-03 09:58:16.357 ServerApp] nbclassic | extension was successfully loaded.
+spark_assignment | [I 2026-08-03 09:58:16.511 ServerApp] nbdime | extension was successfully loaded.
+spark_assignment | [I 2026-08-03 09:58:16.521 ServerApp] notebook | extension was successfully loaded.
+spark_assignment | [I 2026-08-03 09:58:16.522 ServerApp] Serving notebooks from local directory: /home/jovyan
+spark_assignment | [I 2026-08-03 09:58:16.522 ServerApp] Jupyter Server 2.8.0 is running at:
+spark_assignment | [I 2026-08-03 09:58:16.522 ServerApp] http://2753bbf93110:8888/lab?token=40954d728199c4c5219dbc860d353c4534a779dbcc36c691
+spark_assignment | [I 2026-08-03 09:58:16.523 ServerApp]     http://127.0.0.1:8888/lab?token=40954d728199c4c5219dbc860d353c4534a779dbcc36c691
+spark_assignment | [I 2026-08-03 09:58:16.523 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+spark_assignment | [C 2026-08-03 09:58:16.533 ServerApp] 
+spark_assignment |     
+spark_assignment |     To access the server, open this file in a browser:
+spark_assignment |         file:///home/jovyan/.local/share/jupyter/runtime/jpserver-7-open.html
+spark_assignment |     Or copy and paste one of these URLs:
+spark_assignment |         http://2753bbf93110:8888/lab?token=40954d728199c4c5219dbc860d353c4534a779dbcc36c691
+spark_assignment |         http://127.0.0.1:8888/lab?token=40954d728199c4c5219dbc860d353c4534a779dbcc36c691
+Exception in thread Thread-4 (watch_events):
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3/dist-packages/compose/cli/log_printer.py", line 202, in watch_events
+    for event in event_stream:
+  File "/usr/lib/python3/dist-packages/compose/project.py", line 626, in yield_loop
+    yield build_container_event(event)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/compose/project.py", line 594, in build_container_event
+    container = Container.from_id(self.client, event['id'])
+                                               ~~~~~^^^^^^
+KeyError: 'id'
+spark_assignment | [I 2026-08-03 09:58:18.216 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+spark_assignment | 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+spark_assignment | 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+spark_assignment | 0.00s - to python to disable frozen modules.
+spark_assignment | 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+spark_assignment | [W 2026-08-03 09:58:48.466 LabApp] The extension "nbdime-jupyterlab" is outdated.
+spark_assignment |     
+spark_assignment | [I 2026-08-03 09:58:48.466 LabApp] Build is up to date
+spark_assignment | [I 2026-08-03 09:59:58.494 ServerApp] Creating new notebook in 
+spark_assignment | [I 2026-08-03 09:59:58.680 ServerApp] Writing notebook-signing key to /home/jovyan/.local/share/jupyter/notebook_secret
+spark_assignment | [I 2026-08-03 09:59:59.836 ServerApp] Kernel started: 078472aa-b410-4946-91e8-e0fbb64e9e89
+spark_assignment | 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+spark_assignment | 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+spark_assignment | 0.00s - to python to disable frozen modules.
+spark_assignment | 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+spark_assignment | [I 2026-08-03 10:00:02.103 ServerApp] Connecting to kernel 078472aa-b410-4946-91e8-e0fbb64e9e89.
+spark_assignment | [I 2026-08-03 10:00:02.127 ServerApp] Connecting to kernel 078472aa-b410-4946-91e8-e0fbb64e9e89.
+spark_assignment | [I 2026-08-03 10:00:02.174 ServerApp] Connecting to kernel 078472aa-b410-4946-91e8-e0fbb64e9e89.
+spark_assignment | [W 2026-08-03 10:00:02.285 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x747eaa26bd50>
+spark_assignment | [W 2026-08-03 10:00:02.294 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x747ea8b84890>
+spark_assignment | Setting default log level to "WARN".
+spark_assignment | To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+spark_assignment | 26/08/03 10:01:34 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+spark_assignment | [I 2026-08-03 10:01:59.655 ServerApp] Saving file at /Spark_Assignment.ipynb
+[I 2026-08-03 10:04:00.684 ServerApp] Saving file at /Spark_Assignment.ipynb    
+[I 2026-08-03 10:24:48.659 ServerApp] Saving file at /Spark_Assignment.ipynb    
+[I 2026-08-03 10:26:48.754 ServerApp] Saving file at /Spark_Assignment.ipynb    
+spark_assignment | [I 2026-08-03 10:28:59.861 ServerApp] Starting buffering for 078472aa-b410-4946-91e8-e0fbb64e9e89:8a7c4fe0-df8e-4dec-8feb-022e44c9615a
+spark_assignment | [I 2026-08-03 10:28:59.888 ServerApp] Connecting to kernel 078472aa-b410-4946-91e8-e0fbb64e9e89.
+spark_assignment | [I 2026-08-03 10:28:59.889 ServerApp] Restoring connection for 078472aa-b410-4946-91e8-e0fbb64e9e89:8a7c4fe0-df8e-4dec-8feb-022e44c9615a
+spark_assignment | [I 2026-08-03 15:02:31.310 ServerApp] Saving file at /Spark_Assignment.ipynb
+spark_assignment | [I 2026-08-03 15:04:32.253 ServerApp] Saving file at /Spark_Assignment.ipynb
+[I 2026-08-03 15:06:33.258 ServerApp] Saving file at /Spark_Assignment.ipynb    
+[I 2026-08-03 15:08:33.356 ServerApp] Saving file at /Spark_Assignment.ipynb    
+spark_assignment | [I 2026-08-03 15:20:36.254 ServerApp] Saving file at /Spark_Assignment.ipynb
+spark_assignment | [I 2026-08-03 15:35:46.869 ServerApp] Starting buffering for 078472aa-b410-4946-91e8-e0fbb64e9e89:8a7c4fe0-df8e-4dec-8feb-022e44c9615a
+spark_assignment | [I 2026-08-03 15:35:46.915 ServerApp] Connecting to kernel 078472aa-b410-4946-91e8-e0fbb64e9e89.
+spark_assignment | [I 2026-08-03 15:35:46.916 ServerApp] Restoring connection for 078472aa-b410-4946-91e8-e0fbb64e9e89:8a7c4fe0-df8e-4dec-8feb-022e44c9615a
+spark_assignment | [I 2026-08-03 15:38:38.278 ServerApp] Saving file at /Spark_Assignment.ipynb
+[I 2026-08-03 15:40:38.355 ServerApp] Saving file at /Spark_Assignment.ipynb    
+26/08/03 15:42:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+[I 2026-08-03 15:42:39.598 ServerApp] Saving file at /Spark_Assignment.ipynb/ 8]
+spark_assignment | 26/08/03 15:42:41 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:41 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:41 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/08/03 15:42:52 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:52 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:52 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:52 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:52 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:52 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:52 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:52 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:52 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:52 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:52 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:52 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:42:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/08/03 15:43:00 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:00 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:00 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:00 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:00 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:00 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/08/03 15:43:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:43:14 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+[I 2026-08-03 15:43:39.741 ServerApp] Saving file at /Spark_Assignment.ipynb    
+26/08/03 15:45:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/08/03 15:45:28 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:28 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | [I 2026-08-03 15:45:39.858 ServerApp] Saving file at /Spark_Assignment.ipynb
+26/08/03 15:45:43 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:43 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:43 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:43 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:43 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:43 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:43 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:43 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:43 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:43 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:43 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:43 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:43 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:43 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:45:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/08/03 15:46:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/08/03 15:46:23 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:23 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:23 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:23 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:23 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:23 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:23 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:23 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:23 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:23 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:46:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+[I 2026-08-03 15:47:40.344 ServerApp] Saving file at /Spark_Assignment.ipynb    
+26/08/03 15:54:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/08/03 15:54:38 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:38 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:39 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:39 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:39 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:39 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:39 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:39 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:40 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:40 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:40 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:40 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:40 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:40 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:40 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+spark_assignment | 26/08/03 15:54:41 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+[I 2026-08-03 15:55:43.342 ServerApp] Saving file at /Spark_Assignment.ipynb    
+spark_assignment | [I 2026-08-03 15:57:43.646 ServerApp] Saving file at /Spark_Assignment.ipynb
+[I 2026-08-03 15:59:25.069 ServerApp] Saving file at /Spark_Assignment.ipynb/ 9]
+[I 2026-08-03 16:01:25.252 ServerApp] Saving file at /Spark_Assignment.ipynb/ 9]
+[I 2026-08-03 16:03:26.337 ServerApp] Saving file at /Spark_Assignment.ipynb    
+spark_assignment | [I 2026-08-03 16:05:00.650 ServerApp] Saving file at /Spark_Assignment.ipynb
+[I 2026-08-03 16:07:00.758 ServerApp] Saving file at /Spark_Assignment.ipynb    
+[I 2026-08-03 16:09:00.873 ServerApp] Saving file at /Spark_Assignment.ipynb    
+[I 2026-08-03 16:11:01.066 ServerApp] Saving file at /Spark_Assignment.ipynb/ 9]
+[I 2026-08-03 16:11:46.701 ServerApp] Saving file at /Spark_Assignment.ipynb    
+[I 2026-08-03 16:13:46.812 ServerApp] Saving file at /Spark_Assignment.ipynb    
+spark_assignment | [I 2026-08-03 16:15:46.920 ServerApp] Saving file at /Spark_Assignment.ipynb
+[I 2026-08-03 16:17:47.343 ServerApp] Saving file at /Spark_Assignment.ipynb/ 1]
+[I 2026-08-03 16:19:01.784 ServerApp] Saving file at /Spark_Assignment.ipynb    
+spark_assignment | [I 2026-08-03 16:19:02.605 ServerApp] Saving file at /Spark_Assignment.ipynb
+26/08/03 16:19:34 WARN CacheManager: Asked to cache already cached data.        
+[I 2026-08-03 16:21:02.718 ServerApp] Saving file at /Spark_Assignment.ipynb/ 9]
+spark_assignment | [I 2026-08-03 16:23:03.341 ServerApp] Saving file at /Spark_Assignment.ipynb
+spark_assignment | [I 2026-08-03 16:23:03.959 ServerApp] Saving file at /Spark_Assignment.ipynb
+spark_assignment | [I 2026-08-03 16:25:04.367 ServerApp] Saving file at /Spark_Assignment.ipynb
+spark_assignment | [I 2026-08-03 16:53:34.928 ServerApp] Saving file at /Spark_Assignment.ipynb
+
